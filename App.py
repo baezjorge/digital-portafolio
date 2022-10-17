@@ -21,6 +21,7 @@ lottie_coding = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_4
 tickets = Image.open("Images/tickets.png")
 consolidado = Image.open("Images/consolidado.png")
 ila = Image.open("Images/ila.png")
+crm = Image.open("Images/crm.png")
 
 with st.container():
     st.subheader("Hi, I am Jorge Baez :wave:")
@@ -36,11 +37,11 @@ with st.container():
         st.write("##")
         st.write(
             """
+            - Exploratory data analysis with python.
             - Creation of high-level Dashboards through Power BI.
             - Analysis and survey of requirements for the creation of dashboards in Power BI.
-            - SQL queries for data validation.
-            - Creation and documentation of internal processes.
             - Data validation through Microsoft Excel and SQL.
+            - Creation and documentation of internal processes.
             """ 
         )
 
@@ -66,6 +67,23 @@ with st.container():
             """
         )   
         st.markdown("[Watch the example...](https://app.powerbi.com/view?r=eyJrIjoiMzdiYzE1ODctODEzMC00ZGU2LWE3ZTktMDNmN2JhYTNmNDAxIiwidCI6IjNkNmQwOGMxLWJlMzAtNDhjNy05NWQzLTI0NTA3MTQ4ZmQ0NCJ9)")
+
+with st.container():
+    image_column, text_column = st.columns((1,2))
+    with image_column:
+        st.image(crm)
+
+
+    with text_column:
+        st.subheader("Customer Relationship Management (CRM)") 
+        st.write(
+            """
+           This example shows the most relevant information obtained from a CRM. Here you can visualize and interact with the assigned budget vs. achieved, the detail of the management by consultant, the number of quotes, leads, closed sales, etc.
+           This report contains several segmenters that will help you understand the information from the general to the detail.
+            """
+        )   
+        st.markdown("[Watch the example...](https://app.powerbi.com/view?r=eyJrIjoiNDBhYjM5ZGQtYmE3Ny00MDk4LWE4Y2EtNjJjMjk4MzIxMjExIiwidCI6IjNkNmQwOGMxLWJlMzAtNDhjNy05NWQzLTI0NTA3MTQ4ZmQ0NCJ9)")
+
 
 with st.container():
     image_column, text_column = st.columns((1,2))
